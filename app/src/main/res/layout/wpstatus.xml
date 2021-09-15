@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.StatusFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_mystatus_image2"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/girl1"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="3dp" />
+
+
+            <TextView
+                android:id="@+id/tv_mystatus_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/iv_mystatus_image2"
+                android:text="Your Name "
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_mystatus_time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_mystatus_name2"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/iv_mystatus_image2"
+                android:text="Today 12:30pm "
+                android:textSize="24sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_alignEnd="@id/iv_mystatus_image2"
+                android:layout_alignBottom="@id/iv_mystatus_image2"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="6dp"
+                android:backgroundTint="@color/green"
+                android:text="+"
+                android:textAlignment="center"
+                app:cornerRadius="30dp" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DDD6C0"
+        android:padding="5dp"
+        android:text="Recent Updates"
+        android:textSize="20sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_wpstatus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

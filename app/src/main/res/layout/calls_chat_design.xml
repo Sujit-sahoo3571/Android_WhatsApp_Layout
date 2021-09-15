@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_mycall_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/girl1"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="3dp" />
+
+
+        <TextView
+            android:id="@+id/tv_mycall_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/iv_mycall_image"
+            android:text="Your Name "
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_mycall_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_mycall_name"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/iv_mycall_image"
+            android:drawableStart="@drawable/ic_baseline_call_received_24_green"
+            android:text="Today 12:30pm " />
+
+        <ImageView
+            android:id="@+id/iv_mycall_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
